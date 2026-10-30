@@ -149,7 +149,7 @@ form { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 1.5rem; }
 
 @media (max-width: 860px) {
   .hero, .feature, .story, .book-page, .about-body, .contact { grid-template-columns: 1fr; }
-  .hero { padding-top: 3rem; min-height: 0; }
+  .hero { padding-top: 1rem; padding-bottom: 4.5rem; min-height: 0; }
   .hero-media { height: 46vh; min-height: 300px; order: -1; -webkit-mask-image: linear-gradient(to bottom, #000 68%, transparent 80%); mask-image: linear-gradient(to bottom, #000 68%, transparent 80%); }
   .hero-media video { transform: scale(2); }
   .books { grid-template-columns: 1fr; }
