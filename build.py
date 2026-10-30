@@ -32,6 +32,7 @@ def page(filename, title, description, body, current=None):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{description}">
+<meta name="robots" content="noindex, nofollow">
 <link rel="stylesheet" href="styles.css">
 <script src="site.js"></script>
 </head>
