@@ -67,7 +67,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .hero h1 { margin-top: 1.5rem; font-size: clamp(3rem, 6.6vw, 6.5rem); line-height: 1; }
 .hero h1 em { font-style: italic; }
 .hero .lede { margin-top: 2rem; max-width: 30rem; color: var(--grey); }
-.hero-media { height: calc(100svh - 76px); min-height: 480px; }
+/* Il gambo nel video finisce di netto: lo sfuma nel bianco. */
+.hero-media { height: calc(100svh - 76px); min-height: 480px; -webkit-mask-image: linear-gradient(to bottom, #000 62%, transparent 74%); mask-image: linear-gradient(to bottom, #000 62%, transparent 74%); }
 .hero-media video { width: 100%; height: 100%; object-fit: contain; object-position: center; mix-blend-mode: multiply; transform: scale(2.6); }
 
 .feature { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(3rem, 8vw, 8rem); align-items: center; }
@@ -149,7 +150,7 @@ form { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 1.5rem; }
 @media (max-width: 860px) {
   .hero, .feature, .story, .book-page, .about-body, .contact { grid-template-columns: 1fr; }
   .hero { padding-top: 3rem; min-height: 0; }
-  .hero-media { height: 46vh; min-height: 300px; order: -1; }
+  .hero-media { height: 46vh; min-height: 300px; order: -1; -webkit-mask-image: linear-gradient(to bottom, #000 68%, transparent 80%); mask-image: linear-gradient(to bottom, #000 68%, transparent 80%); }
   .hero-media video { transform: scale(2); }
   .books { grid-template-columns: 1fr; }
   .book-page .cover, .about-body figure { position: static; }
